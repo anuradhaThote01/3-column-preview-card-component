@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title> 3-column preview card component</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            display: flex;
+            align-items: center;
+        }
+
+        .card-component {
+            display: flex;
+        }
+
+        .card1 {
+           background-color: hsl(31, 77%, 52%);
+           transition: transform 0.3s ease-in-out;
+           overflow: hidden;
+           width: 25%;
+           margin-bottom: 20px;
+           margin-top: 300px;
+           
+         }
+
+         .card2 {
+            background-color: hsl(184, 100%, 22%);
+            transition: transform 0.3s ease-in-out;
+            overflow: hidden;
+            width: 25%;
+            margin-bottom: 20px;
+            margin-top: 300px;
+           
+         }
+
+         .card3 {
+            background-color: hsl(179, 100%, 13%);
+            transition: transform 0.3s ease-in-out;
+            overflow: hidden;
+            width: 25%;
+            margin-bottom: 20px;
+            margin-top: 300px;
+            
+         }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-decription {
+            font-size: 15px;
+            color: #fff;
+        }
+
+        .card-button {
+            display: block;
+            background-color:hsl(0, 0%, 95%);
+
+            text-align: center;
+            text-decoration: none;
+            padding: 9px;
+            border-radius: 15px;
+            margin-top: 15px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .card-button:hover {
+            background-color: hsla(0, 0%, 100%, 0.75);
+        }
+           
+           
+    </style>
+</head>
+<body>
+    <div class="card-component">
+   
+        <div class="card1">
+            <img src="/images/icon-sedans.svg" alt="">
+            <div class="card-content">
+                <div class="card-title">SEDANS</div>
+                <div class="card-decription ">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+                    or on your next road trip.</div>
+                    <a href="#" class="card-button">Learn More</a>
+                </div>
+            </div>
+    
+            <div class="card2">
+                <img src="/images/icon-suvs.svg" alt="">
+                <div class="card-content">
+                    <div class="card-title">SUVS</div>
+                    <div class="card-decription">Take an SUV for its spacious interior,power,and versatility. Perfect for your next family vacation 
+                        and off-road adventures.</div>
+                        <a href="#" class="card-button">Learn More</a>
+                </div>
+            </div>
+    
+            <div class="card3">
+                <img src="/images/icon-luxury.svg" alt="">
+                <div class="card-content">
+                    <div class="card-title">LUXURY</div>
+                    <div class="card-decription">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+                        rental and arrive in style.</div>
+                        <a href="#" class="card-button">Learn More</a>
+                </div>
+    
+            </div>
+    </div>
+</body>
+</html>
